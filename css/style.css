@@ -230,6 +230,13 @@ inner-banner-agile {
     padding: 2em;
 }
 
+.wthree-inner-sec1 {
+    background: #008B8B;
+    margin-top: 70px;
+    border-radius: 30px;
+    padding: 2em;
+}
+
 .wthree-inner-sec.skills-bg {
     background: #1d1c1b url(../images/skills.jpg) no-repeat center;
     background-size: cover;
@@ -237,6 +244,9 @@ inner-banner-agile {
 
 .sec-head {
     margin: 1em 0 2em;
+}
+.sec-head1{
+    margin: 1em 0 -2em;
 }
 
 h1.sec-title-w3 {
@@ -944,7 +954,10 @@ input[type=range]::-ms-track {
 @media screen and (max-width: 1024px) {
     h1.sec-title-w3 {
         color: rgba(212, 209, 209, 0.59);
-        font-size: 2.5em;
+        font-size: 2em;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        padding-top: 35px;
     }
     .service-txt h5 {
         font-size: 2em;
@@ -1043,7 +1056,7 @@ input[type=range]::-ms-track {
 
 @media screen and (max-width: 667px) {
     .inner-banner-agile {
-        min-height: 220px;
+        min-height: 130px;
     }
     .wthree-inner-sec {
         margin-top: -90px;
@@ -1051,7 +1064,7 @@ input[type=range]::-ms-track {
     }
     .service-txt h5 {
         font-size: 1.6em;
-        margin-top: 2em;
+   /*-- margin-top: 2em;  -- */
     }
 }
 
@@ -1085,6 +1098,10 @@ input[type=range]::-ms-track {
 @media screen and (max-width: 480px) {
     .wthree-inner-sec {
         margin-top: -90px;
+        padding: 1em;
+    }
+    .wthree-inner-sec1 {
+        margin-top: -15px;
         padding: 1em;
     }
     .bar-group {
@@ -1137,6 +1154,10 @@ input[type=range]::-ms-track {
     }
     .service-txt h5 {
         font-size: 1.4em;
+        margin: 0px 20px;
+     /* margin-bottom: 0px; */
+        margin-top: -37px;
+
     }
     .portfolio-area li {
         max-width: 167px;
