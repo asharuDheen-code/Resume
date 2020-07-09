@@ -232,7 +232,21 @@ inner-banner-agile {
 
 .wthree-inner-sec1 {
     background: #008B8B;
-    margin-top: 70px;
+    margin-top: 25px;
+    border-radius: 30px;
+    padding: 2em;
+}
+
+.wthree-inner-sec2 {
+    background: #eff5f8;
+    margin-top: 25px;
+    border-radius: 30px;
+    padding: 2em;
+}
+
+.wthree-inner-sec3 {
+    background: #008B8B;
+    margin-top: 25px;
     border-radius: 30px;
     padding: 2em;
 }
@@ -245,8 +259,9 @@ inner-banner-agile {
 .sec-head {
     margin: 1em 0 2em;
 }
-.sec-head1{
-    margin: 1em 0 -2em;
+.sec-head1 {
+    margin: 1em 0px 0em;
+    text-align: -webkit-center;
 }
 
 h1.sec-title-w3 {
@@ -1081,6 +1096,10 @@ input[type=range]::-ms-track {
     h1.sec-title-w3 {
         font-size: 2em;
     }
+    h1.sec-title-w3-1 {
+        font-size: 2em;
+        margin: 0em -2px 0em;
+    }
     .form-wrapper {
         padding: 2em;
     }
@@ -1101,6 +1120,14 @@ input[type=range]::-ms-track {
         padding: 1em;
     }
     .wthree-inner-sec1 {
+        margin-top: -15px;
+        padding: 1em;
+    }
+    .wthree-inner-sec2 {
+        margin-top: -15px;
+        padding: 1em;
+    }
+    .wthree-inner-sec3 {
         margin-top: -15px;
         padding: 1em;
     }
