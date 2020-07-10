@@ -864,6 +864,10 @@ div.ppt {
 
 .clearfix {
     display: block;
+   /* margin-left: 5%;*/
+}
+
+ul .clearfix1{
     margin-left: 5%;
 }
 

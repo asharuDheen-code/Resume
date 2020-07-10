@@ -99,6 +99,7 @@ header {
     background: rgba(0, 0, 0, 0.39);
     padding: 19vw 0 0;
     min-height: 100vh;
+    border-radius: 5px;
 }
 
 .agile_banner.bg1 {
@@ -109,6 +110,7 @@ header {
     -o-background-size: cover;
     -ms-background-size: cover;
     background-size: cover;
+    border-radius: 0px 0px 6px 6px;
 }
 
 .agile_banner.bg2 {
@@ -205,29 +207,30 @@ inner-banner-agile {
     min-height: 300px;
 }
 
-.inner-banner-agile.skillset {
+/*.inner-banner-agile.skillset {
     background: #dc143c url(../images/bg.png) center no-repeat;
-    background-size: cover;
-}
+    background-size: cover; 
+} 
 
 .inner-banner-agile.banner-port {
     background: #e64c3e;
 }
 
-.inner-banner-agile.services {
+/*.inner-banner-agile.services {
     background: #19adf2;
 }
 
 .inner-banner-agile.contact-bg {
     background: #fbcf4a url(../images/bg.png) center no-repeat;
     background-size: cover;
-}
+}*/
 
 .wthree-inner-sec {
     background: #008B8B;
     margin-top: 70px;
     border-radius: 30px;
     padding: 2em;
+    /* text-align: -webkit-center; */
 }
 
 .wthree-inner-sec1 {
@@ -304,7 +307,7 @@ h1.sec-title-w3 {
     float: left;
     list-style-type: none;
     overflow: hidden;
-    max-width: 261px;
+    max-width: 289px;
 }
 
 .home-portfolio-text {
@@ -603,6 +606,13 @@ input[type=range]::-ms-track {
 .profile-info .content .link_about a:visited:hover {
     color: #dc143c;
     transition: color 0.25s;
+}
+
+.available{
+    font-weight: 400;
+    margin: -1rem 0;
+    line-height: 1.5;
+    color: darkred;
 }
 
 .profile-info .stats .stat {
@@ -922,6 +932,7 @@ input[type=range]::-ms-track {
     letter-spacing: 1px;
     font-weight: 300;
     line-height: 1.5;
+    margin-top: -50px;
 }
 
 .service-txt h5 span {
