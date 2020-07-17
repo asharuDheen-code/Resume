@@ -1288,5 +1288,49 @@ input[type=range]::-ms-track {
         padding: 75vw 3vw 0;
     }
 }
+.siteLink:hover{
+    color: #7b00e0;
+    cursor: help; 
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.3s;
+    transform: scale(0.8);
+    letter-spacing: 2px;
+}
+.icon-border{
+    background-color: #333;
+    border-radius: 50%;
+    width: 40.1px;
+    height: 40.1px;
+    padding: 0;
+}
+#icons{
+    display: inline-block;
+    width: inherit;
+    top: -70px;
+    text-align: center;
+    padding: 0;
+    line-height: 40.1px;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;  
+}
+.border-icon{
+    position: absolute;
+    top: 175px;
+    width: 100%;
+    text-align: center;
+}
+.icon-border:hover{
+    background-color: #7b00e0;
+    cursor: help; 
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+    transition-delay: 0.1s;
+    transform: scale(0.8);
+    letter-spacing: 2px;
+}
+
+
 
 /* -- //Responsive code -- */
