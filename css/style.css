@@ -3,7 +3,9 @@
 	License: Creative Commons Attribution 3.0 Unported
 	License URL: http://creativecommons.org/licenses/by/3.0/
  --*/
-
+.scrollbutton{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-family: 'Fira Sans Condensed', sans-serif;
@@ -1362,6 +1364,30 @@ input[type=range]::-ms-track {
     transition-delay: 0.1s;
     transform: scale(0.9);
     letter-spacing: 2px;
+}
+
+.scrollbtn{
+    background: rgb(38, 38, 53);
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+}
+.scrollbtn.active{
+    bottom: 75px;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 
