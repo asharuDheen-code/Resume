@@ -37,6 +37,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         rel="stylesheet">
     <!-- //online-fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -552,10 +553,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <span class="block"></span>
                     </div>
                     <div class="form-wrapper">
-                        <form action="#" method="post">
+                        <form id="submitForm" action="">
                             <div class="d-flex flex-column">
                                 <label>Your Name:</label>
-                                <input class="text-input" type="text" name="text1" id="text1" required>
+                                <input class="text-input" type="text" name="name" id="name" required>
                             </div>
                             <div class="d-flex flex-column my-sm-5 my-3">
                                 <label>Your Email Address:</label>
@@ -565,8 +566,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <label>Details of Your Project:</label>
                                 <div class="row mt-2">
                                     <div class="three col-lg-3 col-md-6">
-                                        <input type="checkbox" name="c1" id="c1">
-                                        <label class="checkbox-label" for="c1">
+                                        <input type="checkbox" name="Website_Design" id="Website_Design">
+                                        <label class="checkbox-label" for="Website_Design">
                                             <span class="icon">
                                                 <i class="fas fa-pencil-alt"></i>
                                             </span>
@@ -574,8 +575,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         </label>
                                     </div>
                                     <div class="three col-lg-3 col-md-6 mt-md-0 mt-4">
-                                        <input type="checkbox" name="c2" id="c2" checked>
-                                        <label class="checkbox-label" for="c2">
+                                        <input type="checkbox" name="Website_Development" id="Website_Development" checked>
+                                        <label class="checkbox-label" for="Website_Development">
                                             <span class="icon">
                                                 <i class="fas fa-code"></i>
                                             </span>
@@ -583,23 +584,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                         </label>
                                     </div>
                                     <div class="three col-lg-3 col-md-6 mt-lg-0 mt-4">
-                                        <input type="checkbox" name="c3" id="c3">
-                                        <label class="checkbox-label" for="c3">
+                                        <input type="checkbox" name="Css_Design" id="Css_Design">
+                                        <label class="checkbox-label" for="Css_Design">
                                             <span class="icon">
                                                 <i class="fas fa-paint-brush"></i>
                                             </span>
                                             <span class="text">Css Design</span>
                                         </label>
                                     </div>
-                                   <!-- <div class="three col-lg-3 col-md-6 mt-lg-0 mt-4">
-                                        <input type="checkbox" name="c4" id="c4">
-                                        <label class="checkbox-label" for="c4">
+                                   <div class="three col-lg-3 col-md-6 mt-lg-0 mt-4">
+                                        <input type="checkbox" name="Ecommerce_Website" id="Ecommerce_Website">
+                                        <label class="checkbox-label" for="Ecommerce_Website">
                                             <span class="icon">
                                                 <i class="fab fa-opencart"></i>
                                             </span>
                                             <span class="text">Ecommerce Website</span>
                                         </label>
-                                    </div>  -->
+                                    </div> 
                                 </div>
                             </div>
                            <!-- <div class="d-flex flex-column my-sm-5 mt-3 mb-4">
@@ -612,7 +613,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <div class="message">
                                     <h2>Add Your Message</h2>
                                 </div>
-                                <textarea name="t1" id="t1" required></textarea>
+                                <textarea name="message" id="message" required></textarea>
                             </div>
                             <input class="submit" type="submit" value="Send">
                         </form>
@@ -635,6 +636,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </a>
     <script src="js/Scrollbutton.js"></script>
 
+    <!-- SEND TO MAIL SCRIPT...🔥 🚀  -->
+    <script>
+        $("#submitForm").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbybk4pL9hWiy8koY_IE2-Iswk8Kx3UD9I_hk5Utcw/exec",
+                data:$("#submitForm").serialize(),
+                method:"post",
+                success:function (response){
+                    alert("Form submitted successfully")
+                    window.location.reload()
+                    //window.location.href="https://google.com"
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
 </body>
-
 </html>

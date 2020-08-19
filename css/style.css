@@ -502,6 +502,7 @@ input[type=range]::-ms-track {
     color: #fff;
     font-size: 1em;
     padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
 }
 
 #t1 {
@@ -524,8 +525,8 @@ input[type=range]::-ms-track {
 /* SUBMIT BUTTON */
 
 .submit {
-    border: 1px solid #1d1c1b;
-    color: #000;
+    border: 1px solid #9adae7;
+    color: #008B8B;
     background-color: #fff;
     overflow: hidden;
     cursor: pointer;
@@ -535,11 +536,12 @@ input[type=range]::-ms-track {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    border-radius: 3px;
 }
 
 .submit:hover {
-    background-color: #1d1c1b;
-    color: #fff;
+    background-color: #008B8B;
+    color: #9adae7;
     padding: 0.5em 3em;
 }
 
