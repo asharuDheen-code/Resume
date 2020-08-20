@@ -1443,8 +1443,8 @@ input[type="range"]::-ms-track {
 
 .footer-text2 {
   margin-top: -20px;
-  font-size: 31px;
-  color: #058175;
+  font-size: 27px;
+  color: #16b4a5;
 }
 
 .footer-text2:hover {
@@ -1470,10 +1470,10 @@ input[type="range"]::-ms-track {
 }
 
 #gitlink:hover::after {
-  content:'✔️';
+  content: "✔️";
 }
 
 #instalink:hover::after {
-  content:'✔️';
+  content: "✔️";
 }
 /* -- //Responsive code -- */
